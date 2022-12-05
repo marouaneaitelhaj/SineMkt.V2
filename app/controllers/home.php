@@ -7,5 +7,6 @@ class home extends controller
         $user = $this->model('User');
         $user->name = $name[0];
         echo $user->name;
+        $this->view('home/view', ['name' => $user->name]);
     }
 }
