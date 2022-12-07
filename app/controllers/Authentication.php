@@ -1,10 +1,25 @@
 <?php
 class Authentication extends controller
 {
-    public function index($value = '')
+    public $usr;
+    public $psw;
+    public function __construct()
     {
-        echo "jfjfjfj";
-        $model = $this->model($value[0]);
-        $model->Authentication($_POST['Username'], $_POST['Password']);
+        $db = $this->model('Database');
+        if (isset($_POST['btn'])) {
+            $this->usr = $_POST['Username'];
+            $this->psw = $_POST['Password'];
+
+            while ($username = mysqli_fetch_row($db->Username) and $pasword = mysqli_fetch_row($db->Password)) {
+                if (!empty($this->usr) and !empty($this->psw)) {
+                    if ($this->usr == $username[0] and $this->psw == $pasword[0]) {
+                        echo "yahh";
+                    }
+                    else{
+                        header('location: http://localhost/OOP-PHP/public/');
+                    }
+                }
+            }
+        }
     }
 }

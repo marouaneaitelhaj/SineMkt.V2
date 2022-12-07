@@ -3,14 +3,24 @@ class Database
 {
     public static $host = 'localhost';
     public static $dbname = 'gestiondesproduits';
-    public static $username = 'root';
-    public static $password = '';
+    public static $usernamedb = 'root';
+    public static $passworddb = '';
+    public $conn;
+    public  $Username;
+    public   $Password;
 
-    public  static $conn;
 
     public function connect()
     {
-        self::$conn = new mysqli(self::$host, self::$username, self::$password, self::$dbname);
+        $this->conn = new mysqli(self::$host, self::$usernamedb, self::$passworddb, self::$dbname);
     }
-    
+
+    public function __construct()
+    {
+
+        $this->connect();
+        $this->Password = mysqli_query($this->conn, "SELECT `Password` FROM admn;");
+        $this->Username = mysqli_query($this->conn, "SELECT `Username` FROM admn;");
+        // mysqli_query($conn, $this->Username);
+    }
 }

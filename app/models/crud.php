@@ -2,7 +2,7 @@
 class crud extends Database{
     public function addProduct($value1, $value2, $value3, $value4)
     {
-        $sql = "INSERT INTO product (productName, productPrice, productPic, productCategory) VALUES ($value1, $value2, $value3, $value4);";
+        $sql = "INSERT INTO product (productName, productPrice, productPic, productCategory) VALUES ('$value1', '$value2', '$value3', '$value4');";
         mysqli_query($this->conn, $sql);
     }
     public function updateProduct($value1, $value2, $value3, $value4, $value)
