@@ -20,9 +20,12 @@ class app
                         unset($arr[1]);
                         $this->params = $arr ? array_values($arr) : [];
                         call_user_func([$this->controller, $this->method], $this->params, $this->params);
+                        unset($arr);
                     }
                 }
             }
+        } else{
+            require_once '../../OOP-PHP/app/views/home/index.php';
         }
     }
     public function parseUrl()

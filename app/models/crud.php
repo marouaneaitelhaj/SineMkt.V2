@@ -1,5 +1,9 @@
 <?php
+
+use LDAP\Result;
+
 class crud extends Database{
+    public $query;
     public function addProduct($value1, $value2, $value3, $value4)
     {
         $sql = "INSERT INTO product (productName, productPrice, productPic, productCategory) VALUES ('$value1', '$value2', '$value3', '$value4');";
@@ -14,5 +18,11 @@ class crud extends Database{
     {
         $sql = "DELETE FROM product WHERE productName=$value";
         mysqli_query($this->conn, $sql);
+    }
+    public function readProduct(){
+        // $sql = ("SELECT * FROM product");
+        $this->query = mysqli_query($this->conn, 'SELECT * FROM product');
+        $i = 0;
+        
     }
 }
