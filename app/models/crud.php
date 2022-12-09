@@ -22,7 +22,10 @@ class crud extends Database{
     public function readProduct(){
         // $sql = ("SELECT * FROM product");
         $this->query = mysqli_query($this->conn, 'SELECT * FROM product');
-        $i = 0;
-        
+
+    }
+    public function updateReadProduct($value){
+        // $sql = ("SELECT * FROM product");
+        $this->query = mysqli_query($this->conn, "SELECT * FROM `product` WHERE productId = $value;");
     }
 }

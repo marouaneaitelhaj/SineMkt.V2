@@ -1,11 +1,14 @@
 <?php
-class addProduct extends controller
+class updateProduct extends controller
 {
     public function __construct()
     {
-        
         $this->model('Database');
-        $add = $this->model('crud');
-        $add->updateProduct();
+        $read = $this->model('crud');
+        $read->readProduct();
+        $query = $read->query;
+        $this->view('updateProduct', ['query' => $query]);
+        
+        
     }
 }

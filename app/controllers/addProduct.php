@@ -3,6 +3,10 @@ class addProduct extends controller
 {
     public function __construct()
     {
+        session_start();
+        if(isset($_SESSION["username"])){
+        $this->view('addProduct');
+        if (isset($_POST['btn'])) {
         $target_dir = "../uploads/";
         $target_file = $target_dir . basename($_FILES["productPic"]["name"]);
         $uploadOk = 1;
@@ -48,5 +52,8 @@ class addProduct extends controller
         $this->model('Database');
         $add = $this->model('crud');
         $add->addProduct($_POST['productName'], $_POST['productPrice'],$_FILES["productPic"]["name"], $_POST['productCategory']);
+    }}else{
+            $this->view('Authentication');
     }
+}
 }

@@ -75,6 +75,9 @@
 				<!-- Start Atribute Navigation -->
 				<div class="attr-nav">
 					<ul>
+					<li class="login">
+									<a href="logout"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+								</li>
 						<li class="search">
 							<a href="#"><span class="lnr lnr-magnifier"></span></a>
 						</li><!--/.search-->

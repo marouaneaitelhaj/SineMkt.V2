@@ -31,12 +31,20 @@ font-family: 'Martel', sans-serif;
     margin: 0;
 }
 
+
 *{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-o-box-sizing:border-box;
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
+}
+.row-product-list{
+	display : grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.productlist{
+    margin: 2%;
 }
 body{
 	font-family: 'Martel', serif;
@@ -1023,5 +1031,14 @@ span.feature-review {margin-left: 10px;}
 }
 .info-align{
     text-align: left;
+}
+.form-class{
+    width: 25%;
+    
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
 }
 /*========================Thank you=================

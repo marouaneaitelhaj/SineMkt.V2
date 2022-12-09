@@ -16,6 +16,7 @@
 
 	<!-- title of site -->
 	<title>Furniture</title>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 	<!-- For favicon png -->
 	<link rel="shortcut icon" type="image/icon" href="../../OOP-PHP/app/views/home/assets/logo/favicon.png" />
@@ -250,6 +251,9 @@
 						<!-- Start Atribute Navigation -->
 						<div class="attr-nav">
 							<ul>
+								<li class="login">
+									<a href="logout"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+								</li>
 								<li class="search">
 									<a href="#"><span class="lnr lnr-magnifier"></span></a>
 								</li>
