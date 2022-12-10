@@ -25,6 +25,7 @@ class app
                 }
             }
         } else{
+            require_once '../../OOP-PHP/app/views/home/headerUser.php';
             require_once '../../OOP-PHP/app/views/home/index.php';
         }
     }

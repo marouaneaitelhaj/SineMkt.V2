@@ -10,7 +10,15 @@ class controller
         return new $model();
     }
     public function view($view, $data = []){
-        // include_once '../app/views/home/' . $view . '.php';
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+        if(isset($_SESSION["username"])){
+            include_once '../app/views/home/headerAdmin.php';
+            
+        } else{
+            include_once '../app/views/home/headerUser.php';
+        }
         include_once '../app/views/home/' . $view . '.php';
     }
 }

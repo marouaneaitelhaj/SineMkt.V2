@@ -3,7 +3,6 @@ class addProduct extends controller
 {
     public function __construct()
     {
-        session_start();
         if(isset($_SESSION["username"])){
         $this->view('addProduct');
         if (isset($_POST['btn'])) {

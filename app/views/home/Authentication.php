@@ -1,60 +1,4 @@
-<!doctype html>
 
-<head>
-    <!-- meta data -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Let SINE MKT help you discover designer brands & home goods at the lowest prices online. With free shipping on EVERYTHING.">
-    <meta name="keywords" content="office chair,mesh office chair,ergonomic office chair,executive office chair,Staff Office Chair,Revolving Office Chair,Training Chair,Reception Chair,conference chair,leather office chair, office chair,mesh office chair,ergonomic office chair,executive office chair,Staff Office Chair,Revolving Office Chair,Training Chair,Reception Chair,conference chair,leather office chair" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!--font-family-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700" rel="stylesheet">
-
-    <!-- title of site -->
-    <title>Furniture</title>
-
-    <!-- For favicon png -->
-    <link rel="shortcut icon" type="image/icon" href="../app/views/home/assets/logo/favicon.png" />
-
-    <!--font-awesome.min.css-->
-    <link rel="stylesheet" href="../app/views/home/assets/css/font-awesome.min.css">
-
-    <!--linear icon css-->
-    <link rel="stylesheet" href="../app/views/home/assets/css/linearicons.css">
-
-    <!--animate.css-->
-    <link rel="stylesheet" href="../app/views/home/assets/css/animate.css">
-
-    <!--owl.carousel.css-->
-    <link rel="stylesheet" href="../app/views/home/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../app/views/home/assets/css/owl.theme.default.min.css">
-
-    <!--bootstrap.min.css-->
-    <link rel="stylesheet" href="../app/views/home/assets/css/bootstrap.min.css">
-
-    <!-- bootsnav -->
-    <link rel="stylesheet" href="../app/views/home/assets/css/bootsnav.css">
-
-    <!--style.css-->
-    <link rel="stylesheet" href="../app/views/home/assets/css/style.css">
-
-    <!--responsive.css-->
-    <link rel="stylesheet" href="../app/views/home/assets/css/responsive.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-
-    <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-</head>
-
-<body>
 <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
 
 			<!-- Start Top Search -->
@@ -150,7 +94,7 @@
 				</div><!-- /.navbar-collapse -->
 			</div><!--/.container-->
 		</nav><!--/nav-->
-
+	
     <div class="form-class">
         <form action="http://localhost/OOP-PHP/public/Authentication" method="post" enctype="multipart/form-data">
             <div class="form-group">
@@ -197,27 +141,4 @@
 
     <!-- Include all js compiled plugins (below), or include individual files as needed -->
 
-    <script src="../app/views/home/assets/js/jquery.js"></script>
-
-    <!--modernizr.min.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-    <!--bootstrap.min.js-->
-    <script src="../app/views/home/assets/js/bootstrap.min.js"></script>
-
-    <!-- bootsnav js -->
-    <script src="../app/views/home/assets/js/bootsnav.js"></script>
-
-    <!--owl.carousel.js-->
-    <script src="../app/views/home/assets/js/owl.carousel.min.js"></script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-
-    <!--Custom JS-->
-    <script src="../app/views/home/assets/js/custom.js"></script>
-
-</body>
-
-</html>
+   

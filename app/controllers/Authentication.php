@@ -5,7 +5,6 @@ class Authentication extends controller
     public $psw;
     public function __construct()
     {
-        session_start();
         $this->view('Authentication');
         $db = $this->model('Database');
         if (isset($_POST['btn'])) {
@@ -18,10 +17,10 @@ class Authentication extends controller
                         $_SESSION["username"] = $username;
                         echo '<script type="text/javascript">document.body.innerHTML = "";</script>';
                         $this->view('addProduct');
-                        
                     }
                     else{
-                        
+                        $alert = "Try Again";
+                        $this->view('Authentication', ['alert' => $alert]);
                     }
                 }
             }
