@@ -15,6 +15,12 @@ class crud extends Database{
         mysqli_query($this->conn, $sql);
         var_dump($sql);
     }
+    public function updateProductnopic($value1, $value2, $value3, $value)
+    {
+        $sql = "UPDATE `product` SET `productName`='$value1',`productPrice`='$value2',`productCategory`='$value3' WHERE productId = '$value';";
+        mysqli_query($this->conn, $sql);
+        var_dump($sql);
+    }
     public function deleteProduct($value)
     {
         $sql = "DELETE FROM product WHERE productId=$value";
