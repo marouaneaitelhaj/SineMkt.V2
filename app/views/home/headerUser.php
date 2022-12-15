@@ -166,7 +166,7 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu" style="background-color: #f7f6ee;">
 							<ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-								<li><a href="">home</a></li>
+								<li><a href="home">home</a></li>
 								<li><a href="NewArrivals">new arrival</a></li>
 								<li><a href="FeaturedProducts">features</a></li>
 								<li><a href="blog">blog</a></li>

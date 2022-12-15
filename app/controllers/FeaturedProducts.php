@@ -1,7 +1,11 @@
 <?php
 class FeaturedProducts extends controller{
 public function __construct()
-{
-    $this->view('FeaturedProducts');
-}
+    {
+        $this->model('Database');
+        $read = $this->model('crud');
+        $read->readProduct();
+        $query = $read->query;
+        $this->view('FeaturedProducts', ['query' => $query]);
+    }
 }

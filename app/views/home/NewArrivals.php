@@ -14,7 +14,7 @@
 			<div class="new-arrivals-content">
 				<div class="row-product-list">
 					<?php
-
+                    
 					while ($row = mysqli_fetch_array($data['query'])) {
 
 
@@ -43,9 +43,7 @@
 										echo $row['productName'];
 										?>
 									</a></h4>
-								<p class="arrival-product-price"><?php
-																	echo "$" . $row['productPrice'];
-																	?></p>
+								<p class="arrival-product-price"><?php echo "$" . $row['productPrice']; ?></p>
 							</div>
 						</div>
 

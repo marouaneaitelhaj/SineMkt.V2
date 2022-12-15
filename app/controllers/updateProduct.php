@@ -8,7 +8,5 @@ class updateProduct extends controller
         $read->readProduct();
         $query = $read->query;
         $this->view('updateProduct', ['query' => $query]);
-        
-        
     }
 }

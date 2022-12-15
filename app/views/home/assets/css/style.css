@@ -30,7 +30,9 @@ font-family: 'Martel', sans-serif;
     padding: 0;
     margin: 0;
 }
-
+.deletebtn{
+    color: white;
+}
 
 *{
 	-webkit-box-sizing:border-box;
@@ -540,7 +542,7 @@ ul.cart-list > li.total {
         5. New-arrivals 
 --------------------------------------*/
 .new-arrivals {padding:85px 0 70px;}
-.new-arrivals-content{margin-top: 80px;}
+.new-arrivals-content{margin-top: 80px;height: 40vh;}
 
 .single-new-arrival{margin-bottom: 50px;text-align: center;}
 .single-new-arrival-bg {

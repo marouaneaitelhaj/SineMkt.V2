@@ -2,6 +2,10 @@
 class home extends controller{
 public function __construct()
 {
-    $this->view('index');
+    $this->model('Database');
+    $read = $this->model('crud');
+    $read->readProduct();
+    $query = $read->query;
+    $this->view('index', ['query' => $query]);
 }
 }

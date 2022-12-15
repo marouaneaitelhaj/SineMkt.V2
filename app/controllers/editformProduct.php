@@ -1,15 +1,16 @@
 <?php
-class addProduct extends controller
+class editformProduct extends controller
 {
     public function __construct()
     {
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
-        if(isset($_SESSION["username"])){
-        $this->view('addProduct');
-        if (isset($_POST['btn'])) {
-        $target_dir = "../uploads/";
+        $this->model('Database');
+        $read = $this->model('crud');
+        $read->updateReadProduct($_GET['id']);
+        $query = $read->query;
+        $this->view('editformProduct', ['query' => $query]);
+        $this->view('editformProduct');
+        if(isset($_POST['btn'])){
+            $target_dir = "../uploads/";
         $target_file = $target_dir . basename($_FILES["productPic"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -51,11 +52,8 @@ class addProduct extends controller
             } else {
             }
         }
-        $this->model('Database');
-        $add = $this->model('crud');
-        $add->addProduct($_POST['productName'], $_POST['productPrice'],$_FILES["productPic"]["name"], $_POST['productCategory']);
-    }}else{
-            $this->view('Authentication');
+        $update = $this->model('crud');
+        $update->updateProduct($_POST['productName'], $_POST['productPrice'], $_POST['productCategory'], $_FILES["productPic"]["name"], $_GET['id']);
+        }
     }
-}
 }

@@ -1,11 +1,11 @@
 <?php
-class addProduct extends controller
+class deleteproduct extends controller
 {
     public function __construct()
     {
         
         $this->model('Database');
         $add = $this->model('crud');
-        $add->deleteProduct();
+        $add->deleteProduct($_GET['id']);
     }
 }
