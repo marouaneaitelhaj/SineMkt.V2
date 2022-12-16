@@ -41,7 +41,7 @@
 	<link rel="stylesheet" href="../../OOP-PHP/app/views/home/assets/css/bootsnav.css">
 
 	<!--style.css-->
-	<link rel="stylesheet" href="../../OOP-PHP/app/views/home/assets/css/style.css">
+	<link rel="stylesheet" href="../../OOP-PHP/app/views/home/assets/css/style.css?v=<?php echo time();?>">
 
 	<!--responsive.css-->
 	<link rel="stylesheet" href="../../OOP-PHP/app/views/home/assets/css/responsive.css">

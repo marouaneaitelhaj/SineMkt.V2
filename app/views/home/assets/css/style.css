@@ -542,7 +542,7 @@ ul.cart-list > li.total {
         5. New-arrivals 
 --------------------------------------*/
 .new-arrivals {padding:85px 0 70px;}
-.new-arrivals-content{margin-top: 80px;height: 40vh;}
+.new-arrivals-content{margin-top: 80px;min-height: 100vh;}
 
 .single-new-arrival{margin-bottom: 50px;text-align: center;}
 .single-new-arrival-bg {
@@ -721,7 +721,7 @@ p.arrival-review span {margin-right: 15px;}
 --------------------------------------*/
 .feature {padding:25px 0 0px;}
 
-.feature-content,.blog-content{margin-top: 75px;}
+.feature-content,.blog-content{margin-top: 75px;min-height: 80vh;}
 .single-feature,.single-blog {margin-bottom:30px;}
 
 /*.single-feature-txt */

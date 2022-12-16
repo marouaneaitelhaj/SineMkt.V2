@@ -14,7 +14,13 @@ class editformProduct extends controller
         $target_file = $target_dir . basename($_FILES["productPic"]["name"]);
         move_uploaded_file($_FILES["productPic"]["tmp_name"], $target_file);
         $update = $this->model('crud');
+        if($_FILES['productPic']['size'] == 0) {
+            echo '<script type="text/javascript">' .
+          'console.log("hfhfhfhfhfh");</script>';
+        $update->updateProductnopic($_POST['productName'], $_POST['productPrice'], $_POST['productCategory'],$_GET['id']);
+    } else{
         $update->updateProduct($_POST['productName'], $_POST['productPrice'], $_POST['productCategory'], $_FILES["productPic"]["name"], $_GET['id']);
+    }
         }
     }
 }
